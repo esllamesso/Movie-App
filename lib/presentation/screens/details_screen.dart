@@ -16,7 +16,6 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: const NavBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [

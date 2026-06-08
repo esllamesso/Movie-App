@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:appnetflix/presentation/screens/details_screen.dart';
 import 'package:appnetflix/presentation/screens/home_screen.dart';
+import 'package:appnetflix/presentation/widgets/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/svg.dart';
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => NavBar()),
       );
     });
   }
