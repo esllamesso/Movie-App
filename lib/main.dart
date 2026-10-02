@@ -1,3 +1,4 @@
+import 'package:appnetflix/core/api/api_url.dart';
 import 'package:appnetflix/presentation/screens/home_screen.dart';
 import 'package:appnetflix/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,9 @@ import 'logic/popular_bloc/cubit.dart';
 import 'logic/top_rated_bloc/cubit.dart';
 
 void main() {
+  if (ApiUrl.apiKey.isEmpty) {
+    debugPrint('TMDB_API_KEY is not set. Run with --dart-define=TMDB_API_KEY=your_key');
+  }
   runApp(const MyApp());
 }
 
