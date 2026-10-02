@@ -22,7 +22,7 @@ class MoreScreen extends StatelessWidget {
             const SizedBox(height: 12),
 
             const Text(
-              "Eslam Mohamed",
+              "Islam Mohamed",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 22,
